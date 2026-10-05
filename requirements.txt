@@ -1,0 +1,20 @@
+# Data
+numpy
+pandas
+pyarrow
+
+# Models
+torch
+scikit-learn
+xgboost
+
+# Config and environment
+pyyaml
+python-dotenv
+
+# Plots and notebooks
+matplotlib
+jupyter
+
+# Testing
+pytest
