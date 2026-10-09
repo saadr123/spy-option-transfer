@@ -1,6 +1,6 @@
 # Project Overview & Methodology Notes
 
-## 1. Layman's Overview
+## 1. Overview
 This project investigates whether a small Transformer deep learning model can help a day trader predict SPY (S&P 500 ETF) price movements immediately following the market opening. 
 
 The opening 30 minutes of trading (9:30 AM – 9:59 AM Eastern Time) are known for high volatility. At 10:00 AM, the model analyzes the 30 minute bars from that opening half-hour to forecast return quantiles (10th, 50th/median, and 90th percentiles) at three future time horizons: 10:15 AM (15-min lookahead), 10:30 AM (30-min lookahead), and 11:00 AM (60-min lookahead).
