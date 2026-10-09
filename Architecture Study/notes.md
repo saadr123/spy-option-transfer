@@ -17,6 +17,7 @@
 
 ### Model Architecture Breakdown
 
+```mermaid
 flowchart TD
     %% Inputs
     subgraph Inputs ["30-Minute Input Sequence (9:30–9:59 AM)"]
@@ -59,6 +60,7 @@ flowchart TD
     class Rep repStyle;
     class PH s1Style;
     class OH,Out s2Style;
+```
 
 1. **Backbone**: A compact Temporal Convolutional Network (TCN) consisting of **3 convolutional blocks** (~32 channels each) with pooling and dropout to process 30-minute sequence data without overparameterization[cite: 2].
 2. **Pretraining Heads (Stage 1)**: Temporary heads that output two targets over the next 60 minutes: standard SPY return and log realized volatility[cite: 2].
